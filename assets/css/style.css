@@ -10,7 +10,7 @@
 img{
     border-radius: 10px;
     display: block;
-    width: 800px;
+    width: 850px;
     height: 600px;
     margin: 2rem 0px 2rem 8rem;
 }
@@ -39,37 +39,36 @@ a{
 
 /* HEADER */
 
-header{
+body header{
     background-color: #333;
-    height:110vh;
+    height:45rem;
     color: #fff;
 }
 
 body header p{
-    padding-top: 1.9rem;
-    margin-left: 4rem;
+    padding-top: 1rem;
+    margin-left: 2rem;
     letter-spacing: 5px;
-    line-height: 0.3;
+    line-height: 1.5;
+
 }
 
-body header p:nth-of-type(2){
+body header p{
     padding-bottom: 10rem;
 }
 
-header section p{
+header section{
     background-image: linear-gradient(to right,#3dc8d5, #8507e1);
-    padding: 70px 20px 70px 20px;
-    margin: auto;
-    width: 25%;
+    text-align: center;
+    height: 300px;
+    width: 320px;
+    margin: 0 auto;
     border-radius: 10px;
-    background-position: center;
-    line-height: 1;
 }
 
-header section p:hover{
-    background-color: #45a7e2;
-    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .2) 100% );
-    transition: background-color .3s ease-in-out;
+header section:hover{
+    background-color: #5f11b8;
+    background-image: linear-gradient( to left, rgba(03,123,213) 0%, rgba(0, 0, 0, .2) 100% );
 }
 
 header nav{
@@ -77,12 +76,8 @@ header nav{
     margin: 3rem 4rem 0rem 0rem;
     line-height: 25px;
     text-decoration: none;
+    color: #666;
 }
-
-/* header nav ul li:hover{
-    text-decoration: underline;
-    cursor: pointer;
-} */
 
 /* MAIN */
 
@@ -90,6 +85,7 @@ main{
     background-image: url(../img/projects.svg);
     background-size:contain;
     background-repeat: no-repeat;
+
 }
 
 main h1{
@@ -100,7 +96,11 @@ main h1{
 
 main article p{
     padding-left: 75px;
+    padding-top: 30px;
     width: 35%;
+}
+main article p:nth-of-type(2){
+    padding-bottom: 200px;
 }
 
 main section:first-of-type{
@@ -110,4 +110,16 @@ main section:first-of-type{
 main section p{
     margin: 0px 0px 0px 9rem;
     line-height: 1.5em;
+}
+
+main section:nth-of-type(1) p{
+    padding-bottom: 30vh;
+}
+
+main section:nth-of-type(2) p{
+    padding-bottom: 30vh;
+}
+
+main section:nth-of-type(3) p{
+    padding-bottom: 5rem;
 }
